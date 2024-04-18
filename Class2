@@ -1,0 +1,13 @@
+class House:
+
+    def __init__(self):
+        self.NumberOfFloors = 0
+
+    def setNewNumberOfFloors(self, floors):
+        self.NumberOfFloors = floors
+        print('Измененное количество этажей:', self.NumberOfFloors)
+
+house1 = House()
+print('Начальное количество этажей:', house1.NumberOfFloors)
+InputFloors = input('Введите количество этажей:')
+house1.setNewNumberOfFloors(floors = InputFloors)
